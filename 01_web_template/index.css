@@ -163,3 +163,23 @@ h1{
 #page4 .rightmost{
     background-color: rgb(252, 203, 176);
 }
+
+#page5 {
+    grid-template-columns: 1fr 1fr;
+}
+
+#page5 .right{
+    grid-template-rows: 1fr 1fr;
+}
+
+#page5 .left{
+    background-color: blue;
+}
+
+#page5 .right .bottom{
+    background-color: khaki;
+}
+
+#page5 .right .top h1{
+    background-color: rgb(240, 140, 140);
+}
