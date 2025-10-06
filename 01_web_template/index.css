@@ -84,7 +84,7 @@ body,*{
     place-items: center;
     position: fixed;
     left: -100vw;
-    transform: 1s ease-in-out; 
+    transform: all 1s ease-in-out; 
 }
 
 .show{
