@@ -23,7 +23,7 @@ body,*{
     left: 1rem;
     top: 1rem;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: azure;
     z-index: 103;
     background-color: rgba(0, 0, 0, 0);
@@ -58,6 +58,7 @@ body,*{
     font-size: 1.5;
     display: block;
     color: antiquewhite;
+    cursor: pointer;
     margin: 1rem 0;
     text-decoration: none;
     background-color: rgb(105, 121, 0);
