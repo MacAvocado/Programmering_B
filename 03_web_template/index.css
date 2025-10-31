@@ -99,6 +99,15 @@ body,*{
     grid-template-rows: 1fr 3fr;
 }
 
+#page1 .top {
+    background-color: transparent;
+}
+
+#page1 .bottom {
+    background-color: cornsilk;
+    color: darkmagenta;
+}
+
 #page1 .middle:hover{
     transform: scale(1.1);
 }
