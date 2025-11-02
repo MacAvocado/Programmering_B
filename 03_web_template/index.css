@@ -112,8 +112,13 @@ body,*{
     transform: scale(1.1);
 }
 
+#page1 .middle .bottom img {
+    height: 50%;
+    width: 50%;
+}
+
 #page2{
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 .page div{
@@ -127,18 +132,30 @@ body,*{
     background-color: bisque;
 }
 #page2 .bottom{
-    border: 3vw outset lime;
+    border: 1vw outset lime;
     background-image: url(./Assets/Funny_img.jpg);
     background-size: cover;
     grid-template-columns: 3fr 4fr 3fr;
+    top: 0;
 }
 
 #page2 .bottom1 {
-    grid-template-rows: 2fr 3fr 1fr;
+    grid-template-rows: 1fr 7fr 2fr;
+    width: 100%;
+    height: 100%;
 }
 
 #page2 .bottom1 .bottomTitle {
     color: deeppink;
+}
+
+#page2 .bottom1 .bottomImage img{
+    width: 100%;
+    height: 80%;
+}
+
+#page2 .bottom .bottom1 p {
+    size: 2rem;
 }
 
 
@@ -160,6 +177,11 @@ h1{
     background-color: indianred;
 }
 
+#page3 .bottom img {
+    height: 100%;
+    width: 100%;
+}
+
 #page3 .right{
     background-color: rgb(197, 162, 133);
 }
@@ -169,12 +191,15 @@ h1{
     width: 70%;
     display: grid;
     grid-template-rows: 2fr 6fr;
+    background-color: greenyellow;
+    color: crimson;
 }
 
 
 
 #page4{
-    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr 3fr;
+    color: green;
 }
 
 #page4 .leftmost{
