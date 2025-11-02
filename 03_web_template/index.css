@@ -94,7 +94,7 @@ body,*{
 #page1 .middle {
     height: 70%;
     width: 80%;
-    transition: all 9s ease-in-out; 
+    transition: all 20s ease-in-out; 
     background-color: darkgoldenrod;
     grid-template-rows: 1fr 3fr;
 }
@@ -130,7 +130,17 @@ body,*{
     border: 3vw outset lime;
     background-image: url(./Assets/Funny_img.jpg);
     background-size: cover;
+    grid-template-columns: 3fr 4fr 3fr;
 }
+
+#page2 .bottom1 {
+    grid-template-rows: 2fr 3fr 1fr;
+}
+
+#page2 .bottom1 .bottomTitle {
+    color: deeppink;
+}
+
 
 #page3{
     grid-template-columns: 100fr 100fr;
