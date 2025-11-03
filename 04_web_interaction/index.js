@@ -16,6 +16,38 @@ function setup (){
     })
 
 
+    //Drop downs
+    var theDrop = select("#theSelect")
+    theDrop.changed(()=>{
+        select("#page2").style("background-color",theDrop.value())
+    })
+
+
+
+
+    //Input field
+    var theInput = select("#theInput")
+    var theInputButton = select("#theInputButton")
+    var theInputTitle = select("#theInputTitle")
+    theInputButton.mousePressed(()=>{
+        var title = theInput.value()
+        theInput.hide()
+        theInputButton.hide()
+        theInputTitle.html(title)
+    })
+
+
+
+
+    //Check boxes
+    var ck = select("#ck1")
+    ck.changed(()=>{
+        ck.hide()
+        select("#ckl").hide()
+        select("#rebel").html("DEATH TO THE REBELLION")
+    })
+
+
     //set menu op
     var allPages = selectAll(".page")
     allPages.map(

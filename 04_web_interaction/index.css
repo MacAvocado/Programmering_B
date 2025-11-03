@@ -98,3 +98,15 @@ body,*{
     left:0;
 }
 
+input [type="checkbox"],label{
+    display: inline;
+}
+
+#page1 button{
+    background-color: brown;
+}
+
+#rebel{
+    font-size: 20rem;
+    color: red;
+}
