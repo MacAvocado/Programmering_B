@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@800&family=Comic+Relief:wght@400;700&display=swap');
+
+
+body,*{
+    background-color:burlywood;
+    font-family: "Comic relief";
+    margin: 0;
+    padding: 0;
+}
+
+.menu-wrapper{
+    position: fixed;
+    width: fit-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(56, 0, 46, 0);
+}
+
+.burger-icon{
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    cursor: pointer;
+    font-size: 2.3rem;
+    color: azure;
+    z-index: 103;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 1s ease-in-out;
+
+}
+
+.menu-wrapper:has(sidebar:hover) .burger-icon, .burger-icon:hover{
+        background-color: rgba(166, 255, 0, 0.8);
+}
+
+.sidebar{
+    position: relative;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 15rem;
+    background-color: rgb(100, 12, 28);
+    color: aqua;
+    padding: 4rem 1rem;
+    box-sizing: border-box;
+    transition: left 0.3s ease-in-out;
+}
+
+.burger-icon:hover + .sidebar,.sidebar:hover{
+    left: 0;
+
+}
+
+.sidebar a{
+    font-size: 1.5;
+    display: block;
+    color: antiquewhite;
+    cursor: pointer;
+    margin: 1rem 0;
+    text-decoration: none;
+    background-color: rgb(105, 121, 0);
+    opacity: 0.4;
+    transition: opacity 0.1394s ease-in-out, 
+        transform 0.3s ease-in-out;
+    
+}
+
+.sidebar a:hover{
+    opacity: 1;
+    transform: translateX(0.5rem);
+    filter:drop-shadow(0 0 25px rgb(148, 56, 108))
+}
+
+.page div{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.page{
+    color: pink;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+    display: grid;
+    place-items: center;
+    position: fixed;
+    left: -100vw;
+    transition: all 1s ease-in-out; 
+}
+
+.show{
+    left:0;
+}
+
+input [type="checkbox"],label{
+    display: inline;
+}
+
+#page1 button{
+    background-color: brown;
+}
+
+#rebel{
+    font-size: 20rem;
+    color: red;
+}
