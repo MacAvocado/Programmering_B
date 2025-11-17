@@ -98,15 +98,47 @@ body,*{
     left:0;
 }
 
-input [type="checkbox"],label{
-    display: inline;
+#page1 {
+    background-image: url(./assets/forest.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-#page1 button{
-    background-color: brown;
+
+.box {
+    max-width: 40rem;
+    min-height: 40rem;
+    background-color:rgba(0, 0, 0, 0.6);
+    grid-template-rows: 1fr 5fr
 }
 
-#rebel{
-    font-size: 20rem;
-    color: red;
+.scroll {
+    background-color: darkgoldenrod;
+    overflow: scroll;
+    min-height: 100%;
+    padding:  20%;
+
+}
+
+.box .top {
+    background-color: darksalmon;
+
+}
+
+#page2{
+    overflow-y: scroll;
+}
+
+.parallax {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.background1 {
+    background-image: url("./assets/bird.jpg");
+}
+
+.background2{
+    background-image: url("./assets/forest.jpg");
 }

@@ -15,6 +15,14 @@ function setup (){
         }
     })
 
+    //p5 buttons
+    var myButton = createButton("Button created with js")
+    //Læg den nd i side fem
+    select("#page5").child(myButton)
+    myButton.mousePressed(()=>{
+        shiftPage("#page1")
+    })
+
 
     //Drop downs
     var theDrop = select("#theSelect")
