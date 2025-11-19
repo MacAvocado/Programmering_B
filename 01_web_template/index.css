@@ -190,6 +190,7 @@ h1{
 
 #page5 .right .bottom{
     background-color: khaki;
+    position: relative;
 }
 
 #page5 .right .top h1{
@@ -201,4 +202,20 @@ h1{
 object-fit: cover;
 width: 100%;
 height: 100%;
+}
+
+#videoButton {
+    position: absolute;
+    top: 7rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: rgba(149, 224, 4,0.6);
+    color: blanchedalmond;
+    border: 1px solid darkolivegreen ;
+    z-index: 20;
+    transition: .3s ease-in-out all;
+}
+
+#videoButton:hover{
+    border: 3px dotted hotpink;
 }
