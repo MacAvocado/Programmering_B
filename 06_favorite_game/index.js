@@ -1,6 +1,7 @@
 var currentPage = "#page1"
 var videoButton, theVideo
 var videoPlayin = true
+var newPage
 
 
 function setup (){
@@ -21,17 +22,26 @@ function setup (){
         }
     })
 
+    var theDrop = select("#theSelect")
+    var currentClass = ("Terminids")
+    theDrop.changed(()=>{
+        select("#page2").removeClass(currentClass)
+        currentClass = theDrop.value()
+        select("#page2").addClass(theDrop.value())
+        console.log(currentClass)
+    })
+
+
 
   
 
-    //set menu op
     var allPages = selectAll(".page")
     allPages.map(
         page => {
             var menuItem = createElement("a")
             menuItem.html(page.attribute("title"))
             menuItem.mousePressed(
-                () => shiftPage(page.attribute("title"))
+                () => shiftPage("#" + page.attribute("id"))
             )
             select(".sidebar").child(menuItem)
         }
@@ -43,5 +53,6 @@ function shiftPage (newPage){
     select(currentPage).removeClass("show")
     select(newPage).addClass("show")
     currentPage = newPage
+    //console.log ("shift page kaldt")
 }
 
