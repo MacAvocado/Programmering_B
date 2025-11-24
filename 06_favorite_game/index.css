@@ -131,14 +131,54 @@ body,*{
     color: rgb(211, 211, 211);
 }
 
+#pageBox {
+    transition: all 1s ease-in-out;
+}
+
+
+
+
+
 .Terminids #pageBox {
+    background-size: cover;
     background-image: url("./assets/Terminids.webp");
+    min-width: 100%;
+    min-height: 100%;
 }
 
-.Automatons {
+.Automatons #pageBox {
+    background-size: cover;
     background-image: url("./assets/Automatons.webp");
+    min-width: 100%;
+    min-height: 100%;
 }
 
-.Illuminates {
+.Illuminates #pageBox {
+    background-size: cover;
     background-image: url("./assets/Illuminate.webp");
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#page3 {
+    overflow-y: scroll;
+}
+
+.parallax {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#page3 .parallax{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index:1;
+}
+
+.background1 {
+    background-image: url(./assets/Capes.jpg)
 }
