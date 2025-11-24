@@ -170,15 +170,13 @@ body,*{
     background-size: cover;
 }
 
-#page3 .parallax{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index:1;
-}
+
 
 .background1 {
     background-image: url(./assets/Capes.jpg)
+}
+
+.background2 {
+    min-height: 50vh;
+    color: #000;
 }
