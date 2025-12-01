@@ -1,5 +1,10 @@
-var currentPage = "#page1"
+var currentPage = "#page2"
 var capture
+var otterSound
+
+function preload(){
+    otterSound = loadSound("./assets/ottter-352821.mp3")
+}
 
 
 function setup (){
@@ -11,6 +16,11 @@ function setup (){
     capture = createCapture(VIDEO, {flipped:true})
     capture.size(720,468)
     select("#page1").child(capture)
+
+
+    select("#otter").mousePressed(()=>{
+        otterSound.play()
+    })
 
 
     

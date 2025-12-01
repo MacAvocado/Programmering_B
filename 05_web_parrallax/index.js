@@ -32,7 +32,16 @@ function shiftPage (newPage){
     currentPage = newPage
 }
 
-document.addEventListener("mousemove",(e)=>{
+function mouseMoved(e){
+    //console.log("p5 js",mouseX, mouseY,windowHeight,windowWidth)
+    selectAll(".parallaxMouse").map(div => {
+        const speed = div.attribute("dataSpeed")
+        //console.log(speed)
+        div.style('transform',`translate(${-(mouseX - windowWidth/2)*speed}px, ${-(mouseY - windowHeight/2)*speed}px)`)
+    })
+}
+
+/*document.addEventListener("mousemove",(e)=>{
     mouseX = e.clientX
     mouseY = e.clientY
 
@@ -40,9 +49,10 @@ document.addEventListener("mousemove",(e)=>{
     var screenHeight = window.innerHeight
     //console.log(mouseX, mouseY)
     document.querySelectorAll(".parallaxMouse").forEach((elem)=>{
-        elem.style.transform = `translate(${mouseX - screenWidth/2}px, ${mouseY - screenHeight/2}px)`
+        const speed = elem.getAttribute("dataSpeed")
+        elem.style.transform = `translate(${(mouseX - screenWidth/2)*speed}px, ${(mouseY - screenHeight/2)*speed}px)`
     })
-})
+})*/
 
 
 
