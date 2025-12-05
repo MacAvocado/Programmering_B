@@ -1,9 +1,7 @@
-var currentPage = "#page2"
-var capture
-var otterSound, MetalSound
+var currentPage = "#page1"
 
-function preload(){
-    otterSound = loadSound("./assets/ottter-352821.mp3")
+
+
 
 
 
@@ -13,20 +11,7 @@ function setup (){
     shiftPage(currentPage)
 
 
-    capture = createCapture(VIDEO, {flipped:true})
-    capture.size(720,468)
-    select("#page1").child(capture)
-
-
-    select("#otter").mousePressed(()=>{
-        otterSound.play()
-    })
-
-
-    MetalSound = createAudio("./assets/Metal.mp3")
-    MetalSound.showControls()
-    select("#2page").child(MetalSound)
-
+    
 
     //set menu op
     var allPages = selectAll(".page")
